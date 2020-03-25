@@ -1,0 +1,121 @@
+
+<div class="container-fluid">
+    <div class="main_body">
+        <div>
+            <h2>NEW LEASE DRIVER</h2>
+            <!-- {{ driverForm.value | json }} -->
+            <br>
+            
+        </div>
+        <form #driverForm="ngForm" (ngSubmit)="onSubmit(driverForm)">
+        <div class="row">
+            
+                <div class="col section1 text-center">
+                    <div class="personal_data jumbotron">
+                        <h4 class="">PERSONAL DATA</h4>
+                        <table  cellpadding="3" class="text-center">
+                        
+                            <tr>
+                                <td >Title*</td>
+                                <td><input class="form-control" type="text" name="title" id="title" ngModel></td>
+                            </tr>
+                            <tr>
+                                <td>First Name*</td>
+                                <td><input class="form-control"  type="text" name="firstName" id="firstName" ngModel></td>
+                            </tr>
+                            <tr>
+                                <td>Middle Name</td>
+                                <td><input  class="form-control" type="text" name="lastName" id="lastName" ngModel></td>
+                            </tr>
+                            <tr>
+                                <td>Last Name*</td>
+                                <td><input class="form-control" type="text" name="lastName" id="lastName" ngModel></td>
+                            </tr>
+                            <tr>
+                                <td>Date of Birth*</td>
+                                <td><input class="form-control" type="date" name="dob" id="dob" ngModel></td>
+                            </tr>
+                            <tr>
+                                <td>E-mail*</td>
+                                <td><input class="form-control" type="email" name="email" id="email" ngModel></td>
+                            </tr>
+                            <tr>
+                                <td>Telephone</td>
+                                <td><input class="form-control" type="number" name="telephone" id="telephone" ngModel></td>
+                            </tr>
+                            <tr>
+                                <td>Mobile No</td>
+                                <td><input class="form-control" type="number" name="mobile" id="mobile" ngModel></td>
+                            </tr>
+                            <tr>
+                                <td>Job Title</td>
+                                <td><input class="form-control" type="text" name="jobTitle" id="jobTitle" ngModel></td>
+                            </tr>
+                            <tr>
+                                <td>Staff Number</td>
+                                <td><input class="form-control" type="number" name="staffNumber" id="staffNumber" ngModel></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="address jumbotron">
+                        <table cellpadding="3">
+                            <h4>ADDRESS</h4>
+                            <tr>
+                                <td>Address*</td>
+                                <td><textarea class="form-control" name="address" id="address" cols="21" rows="2" ngModel></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Postcode*</td>
+                                <td><input class="form-control" type="text" name="postcode" id="postcode" ngModel></td>
+                            </tr>
+                            <tr>
+                                <td>City*</td>
+                                <td><input class="form-control" type="text" name="city" id="city" ngModel></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col section2 text-center">
+                    <div class="licence jumbotron">
+                        <h4>LICENSE</h4>
+                        <table cellpadding="3">
+                            
+                            <tr>
+                                <td>Licence No</td>
+                                <td><input class="form-control" type="text" name="licenseNo" id="licenseNo" ngModel></td>
+                            </tr>
+                            <tr>
+                                <td>Licence Valid From</td>
+                                <td><input class="form-control" type="date" name="licenseValidFrom" id="licenseValidFrom" ngModel></td>
+                            </tr>
+                            <tr>
+                                <td>Licence Valid To</td>
+                                <td><input class="form-control" type="date" name="licenseValidTo" id="licenseValidTo" ngModel></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- <div class="budget">
+        
+                    </div> -->
+                    <div class="cancelDriver jumbotron">
+                        <h4>CANCEL DRIVER</h4>
+                        <table cellpadding="3">
+                            <tr>
+                                <td>End Date*</td>
+                                <td><input class="form-control" type="date" name="endDate" id="endDate" ngModel></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- <div class="accessTo">
+        
+                    </div> -->
+
+                    <div class="submit_btn text-right">
+                        <button type="submit" class="btn btn-primary">SAVE DRIVER</button>
+                    </div>
+               </div>
+            
+            </div>
+        </form>
+    </div>
+</div>
